@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #003366;
+}
+
+input[type="file"], input[type="text"], input[type="date"] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.pasteZone {
+  border: 2px dashed #ccc;
+  padding: 1rem;
+  min-height: 60px;
+  cursor: pointer;
+  background: #f9f9f9;
+  margin-bottom: 1rem;
+}
+
+#status {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+#download {
+  margin-top: 1rem;
+}

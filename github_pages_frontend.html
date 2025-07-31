@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PSI Report Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Performance Report Generator</h1>
+
+  <form id="reportForm" enctype="multipart/form-data">
+    <label>Analyzed URL (optional):</label><br>
+    <input type="text" name="url" placeholder="https://example.com" /><br><br>
+
+    <label>Date (optional):</label><br>
+    <input type="date" name="date" /><br><br>
+
+    <h2>Take 1</h2>
+    <label>Mobile (upload or paste):</label><br>
+    <input type="file" name="take1_mobile" accept="image/*" /><br>
+    <div class="pasteZone" data-name="take1_mobile">Paste here (Mobile)</div><br>
+
+    <label>Desktop (upload or paste):</label><br>
+    <input type="file" name="take1_desktop" accept="image/*" /><br>
+    <div class="pasteZone" data-name="take1_desktop">Paste here (Desktop)</div><br>
+
+    <h2>Take 2</h2>
+    <label>Mobile (upload or paste):</label><br>
+    <input type="file" name="take2_mobile" accept="image/*" /><br>
+    <div class="pasteZone" data-name="take2_mobile">Paste here (Mobile)</div><br>
+
+    <label>Desktop (upload or paste):</label><br>
+    <input type="file" name="take2_desktop" accept="image/*" /><br>
+    <div class="pasteZone" data-name="take2_desktop">Paste here (Desktop)</div><br>
+
+    <h2>Take 3</h2>
+    <label>Mobile (upload or paste):</label><br>
+    <input type="file" name="take3_mobile" accept="image/*" /><br>
+    <div class="pasteZone" data-name="take3_mobile">Paste here (Mobile)</div><br>
+
+    <label>Desktop (upload or paste):</label><br>
+    <input type="file" name="take3_desktop" accept="image/*" /><br>
+    <div class="pasteZone" data-name="take3_desktop">Paste here (Desktop)</div><br>
+
+    <button type="submit">Generate Report</button>
+  </form>
+
+  <div id="status"></div>
+  <div id="download"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
