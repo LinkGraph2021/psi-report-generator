@@ -40,7 +40,7 @@ document.getElementById('reportForm').addEventListener('submit', async (e) => {
   }
 
   try {
-    const res = await fetch('https://your-backend.onrender.com/generate-report', {
+    const res = await fetch('https://psi-report-backend.onrender.com/generate-report', {
       method: 'POST',
       body: formData,
     });
